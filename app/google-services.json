@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229928042845",
+    "project_id": "fabset-b9b2a",
+    "storage_bucket": "fabset-b9b2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229928042845:android:811fc42f6c58a844fda8b4",
+        "android_client_info": {
+          "package_name": "com.example.fabset"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG_1ikwuP7zeSauzBCYymMu9rya3dUY0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

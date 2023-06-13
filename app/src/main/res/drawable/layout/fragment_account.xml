@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment"
+    android:orientation="vertical"
+    android:id="@+id/account_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:gravity="center"
+        android:background="@color/orange_200"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textSize="33sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginVertical="220dp"
+        android:textStyle="bold"
+        android:paddingVertical="8dp"
+        android:layout_marginHorizontal="9dp"
+        android:text="Login/Signup"
+        android:id="@+id/to_form"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/user_account">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"
+            android:text="Hello "
+            android:id="@+id/greeting"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/default_avatar"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_image"
+            android:id="@+id/pro_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:scaleType="centerCrop"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/email"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:paddingVertical="18dp"
+            android:drawableLeft="@drawable/edit_info"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="28dp"
+            android:text="Edit Profile"
+            android:id="@+id/edit_prof"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:paddingVertical="18dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/orders"
+            android:drawablePadding="8dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="6dp"
+            android:text="My Orders"
+            android:id="@+id/my_orders"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:paddingVertical="18dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/logout"
+            android:drawablePadding="8dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Logout"
+            android:id="@+id/Logout"/>
+    </LinearLayout>
+
+</LinearLayout>

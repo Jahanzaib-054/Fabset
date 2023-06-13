@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:textSize="18sp"
+        android:paddingVertical="12dp"
+        android:textColorHint="#6B788B"
+        android:elevation="4dp"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/search_view_bg"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="8dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:id="@+id/search_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/view_pager_background"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/Home_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="6dp"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Summer Offers"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="14dp"
+                                    android:text="Get best deals ever on\nsummer collection in our store"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="16dp"
+                                    android:background="@color/peach"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="6dp"
+                                    android:text="Shop now"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="140dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:contentDescription="summer deals"
+                                android:src="@drawable/card1" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="6dp"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="14dp"
+                                    android:text="Get discounts on fashion day"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Up to 50% off"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="34dp"
+                                    android:background="@color/peach"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="6dp"
+                                    android:text="Get now"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:contentDescription="summer deals"
+                                android:src="@drawable/card2" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="6dp"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Special offers"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginTop="14dp"
+                                    android:paddingEnd="20dp"
+                                    android:text="Attractive discounts on \nbiggest sale ever"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="16dp"
+                                    android:background="@color/peach"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="6dp"
+                                    android:text="Shop now"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:contentDescription="summer deals"
+                                android:src="@drawable/card3" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginBottom="6dp"
+                android:id="@+id/Category_cards">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="6dp">
+                    <Button
+                        android:id="@+id/New"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_background"
+                        android:text="New"
+                        android:textSize="11sp"
+                        android:paddingVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/Trending"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Trending"
+                        android:textSize="11sp"
+                        android:paddingVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/Sale"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Sale"
+                        android:textSize="11sp"
+                        android:paddingVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/Popular"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Popular"
+                        android:textSize="11sp"
+                        android:paddingVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/Best"
+                        android:layout_width="120dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Best seller"
+                        android:textSize="11sp"
+                        android:paddingVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

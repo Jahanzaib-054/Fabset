@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/form_btn">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingVertical="18dp"
+            android:text="Login"
+            android:gravity="center"
+            android:id="@+id/login_btn"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="30sp"
+            android:text="Signup"
+            android:paddingVertical="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/signup_btn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_btn"
+        android:orientation="vertical"
+        android:id="@+id/form_layout">
+    </LinearLayout>
+
+</RelativeLayout>

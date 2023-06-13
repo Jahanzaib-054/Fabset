@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DisplayProductActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="@color/white"
+                android:padding="16dp"
+                android:src="@drawable/arrow_back" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@id/back_btn"
+                android:id="@+id/pro_img"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pro_img"
+                android:id="@+id/pro_name"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text=""/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pro_name"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/pro_price"
+                android:textColor="@color/black"
+                android:layout_marginVertical="10dp"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/pro_price"
+                android:id="@+id/radiolayout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginVertical="4dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/pro_size"
+                    android:text="Size : "/>
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Small" />
+
+                    <RadioButton
+                        android:id="@+id/radioMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Medium" />
+
+                    <RadioButton
+                        android:id="@+id/radioLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Large" />
+
+                    <!-- Add more size options as needed -->
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiolayout"
+                android:id="@+id/qty_layout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/pro_qty"
+                    android:text="Quantitiy :"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/quantity"
+                    android:text="1"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/increase"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_circle"
+                    android:backgroundTint="@color/white" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/decrease"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/remove_circle"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to cart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingVertical="12dp"
+                android:layout_below="@id/qty_layout"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/addcart"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
